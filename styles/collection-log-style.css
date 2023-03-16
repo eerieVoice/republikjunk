@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.table-sortable {
+  border-collapse: collapse;
+  margin: 30px 0;
+  font-size: 1em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  font-size: 2vw;
+  font-weight: 600;
+  position: relative;
+  margin-top: 1vw;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 5vw;
+  border-radius: 5px;
+  background: linear-gradient(150deg, #0a86d8, #22222a);
+}
+.table-sortable thead tr {
+  background-color: #22222a;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.table-sortable th,
+.table-sortable td {
+  padding: 15px 20px;
+}
+
+.table-sortable tbody tr {
+  border-bottom: 1px solid whitesmoke;
+}
+.table-sortable tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+.table-sortable tbody tr:last-of-type {
+  border-bottom: 2px solid #22222a;
+}
+.table-sortable th {
+  cursor: pointer;
+}
+.table-sortable .th-sort-asc::after {
+  content: "\25b4";
+}
+
+.table-sortable .th-sort-desc::after {
+  content: "\25be";
+}
+
+.table-sortable .th-sort-asc::after,
+.table-sortable .th-sort-desc::after {
+  margin-left: 5px;
+}
+
+.table-sortable .th-sort-asc,
+.table-sortable .th-sort-desc {
+  background: rgba(0, 0, 0, 0.1);
+}
