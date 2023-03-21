@@ -16,33 +16,54 @@ require 'util/admin_conn.php';
             <span>
                 Pre-collection Status
             </span>
-            <span id='date-time'></span>
+            <span id='date-time'>
+                <p>Latest MRF Status: </p>
+                <p class="dateDetect" type="text"></p>
+            </span>
         </div>
         <div class="lower-cards">
             <div class="card">
                 <div class="value">
                     <div class="number">
-                        <p>10</p>
+
+                        <p class="status" type="text"></p>
                     </div>
                 </div>
-                <div class="trash-type"></div>
+                <div class="trash-type"><span class="trash-types">Plastic Pet</span></div>
             </div>
             <div class="card">
-                <div class="value"></div>
-                <div class="trash-type"></div>
+                <div class="value">
+                    <div class="number">
+
+                        <p class="status" type="text"></p>
+                    </div>
+                </div>
+                <div class="trash-type">
+                    <p class="trash-types">Plastic Solid</p>
+                </div>
             </div>
             <div class="card">
-                <div class="value"></div>
-                <div class="trash-type"></div>
+                <div class="value">
+                    <div class="number">
+
+                        <p class="status" type="text"></p>
+                    </div>
+                </div>
+                <div class="trash-type">
+                    <span class="trash-types">Cans</span>
+                </div>
             </div>
             <div class="card">
-                <div class="value"></div>
-                <div class="trash-type"></div>
+                <div class="value">
+                    <div class="number">
+
+                        <p class="status" type="text"></p>
+                    </div>
+                </div>
+                <div class="trash-type"><span class="trash-types">Carton</span></div>
             </div>
-            <div class="card">
-                <div class="value"></div>
-                <div class="trash-type"></div>
-            </div>
+
+
         </div>
 
     </div>
@@ -55,16 +76,16 @@ require 'util/admin_conn.php';
         </div>
     </div>
 
-
+    <script src="scripts/status.js" type="module">
+        function myFunction() {
+            document.getElementById("logoutform").submit();
+        }
+        // var dt = new Date();
+        // document.getElementById('date-time').innerHTML = dt;
+    </script>
 
 </body>
 
-<script>
-    function myFunction() {
-        document.getElementById("logoutform").submit();
-    }
-    var dt = new Date();
-    document.getElementById('date-time').innerHTML = dt;
-</script>
+
 
 </html>

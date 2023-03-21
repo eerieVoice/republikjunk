@@ -6,7 +6,7 @@
 .upper-container,
 .lower-container {
   width: 95rem;
-  height: 12rem;
+  /* height: 12rem; */
   border: 1px solid black;
   margin: 3rem auto;
   background-color: whitesmoke;
@@ -27,7 +27,7 @@
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .card {
   border-radius: 10px;
@@ -35,6 +35,10 @@
   background-color: rgb(210, 210, 210);
   display: grid;
   grid-template-columns: 1fr 2fr;
+  border: 1px solid whitesmoke;
+}
+.lower-cards .card {
+  height: 12vh;
 }
 .lower-container {
   margin-top: -1.5rem;
@@ -47,21 +51,60 @@
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: #46accc;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .value {
   background-color: #058aab;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-}
-.number {
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  background-color: aliceblue;
-  font-size: 40px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 15%;
-  margin-left: 7%;
+}
+.number {
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+  background-color: aliceblue;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*border: 1px solid black;*/
+}
+/* DILI NAKO GAKA  CENTER SHET*/
+.trash-types {
+  font-weight: 700;
+  font-size: 30px;
+  color: whitesmoke;
+  /* text-shadow: 0 0 5px black; */
+  -webkit-text-stroke: 1px #24252a;
+}
+#date-time {
+  display: flex;
+  flex-direction: row;
+}
+#date-time p {
+  padding-left: 5px;
+  text-shadow: 0 0 3px rgb(151, 151, 151, 0.5);
+}
+#date-time p:last-of-type {
+  color: #24252a;
+  font-weight: 700;
+}
+
+@media (max-width: 960px) {
+  .upper-container {
+    width: 95vw;
+  }
+  .lower-cards {
+    grid-template-columns: 1fr;
+  }
+  .lower-cards .card {
+    padding-bottom: 1rem;
+  }
 }

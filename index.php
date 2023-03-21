@@ -22,7 +22,7 @@
                 <div class="logo">
                     <img src="img/rjlogo.png" alt="">
                 </div>
-                <form action="util/account.php" method="POST" enctype="multipart/form-data">
+                <form action="util/account.php" method="POST" enctype="multipart/form-data" autocomplete="off">
                     <div>
                         <label>Username</label>
                         <input type="text" name="r_name" required>

@@ -17,19 +17,49 @@ require 'util/admin_conn.php';
 
     <?php include 'includes/header.php'; ?>
 
+
+
     <div class="container">
         <div class="row">
             <div class="column">
-
+                <div class="type">Plastic Pet</div>
+                <img id="mrf">
+                <div class="statusdiv">
+                    <p class="status" type="text"></p>
+                </div>
+                <div class="date-time">
+                    <p class="dateDetect" type="text"></p>
+                </div>
             </div>
             <div class="column">
-
+                <div class="type">Plastic Solid</div>
+                <img id="mrf1">
+                <div class="statusdiv">
+                    <p class="status" type="text">50%</p>
+                </div>
+                <div class="date-time">
+                    <p class="dateDetect" type="text"></p>
+                </div>
             </div>
             <div class="column">
-
+                <div class="type">Cans</div>
+                <img id="mrf2">
+                <div class="statusdiv">
+                    <p class="status" type="text">75%</p>
+                </div>
+                <div class="date-time">
+                    <p class="dateDetect" type="text"></p>
+                </div>
             </div>
             <div class="column">
-
+                <div class="type">Plastic Pet</div>
+                <img id="mrf3">
+                <div class="statusdiv">
+                    <p class="status" type="text">Full</p>
+                </div>
+                <div class="date-time">
+                    <p class="dateDetect" type="text"></p>
+                </div>
             </div>
         </div>
     </div>
@@ -38,10 +68,13 @@ require 'util/admin_conn.php';
 
 </body>
 
-<script>
+<script type="module" src="scripts/mrf.js">
     function myFunction() {
         document.getElementById("logoutform").submit();
     }
+</script>
+<script type="module" src="scripts/mrfstatus.js">
+
 </script>
 
 </html>
