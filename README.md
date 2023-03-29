@@ -16,3 +16,4 @@ git commit -m "//comment"
 
 git branch // check how many branches repo
 git checkout ''branch name' // switch other branch
+git merge 'branch name'
