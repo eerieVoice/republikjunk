@@ -16,4 +16,4 @@ git commit -m "//comment"
 
 git branch // check how many branches repo
 git checkout ''branch name' // switch other branch
-git merge 'branch name'
+git merge 'branch name' // first checkout to branch you wanna change and then git first to merge the files from the branch files you want to your current files
