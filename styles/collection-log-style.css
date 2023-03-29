@@ -3,6 +3,11 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+
+body {
+  background-image: url("../img/collectbackg.svg");
+  background-size: cover;
+}
 .container {
   display: grid;
   place-items: center;
@@ -29,7 +34,7 @@
   left: 0;
   bottom: 0;
   height: 3px;
-  width: 5vw;
+  width: 13vw;
   border-radius: 5px;
   background: linear-gradient(150deg, #0a86d8, #24252a);
 }
@@ -53,6 +58,9 @@
 }
 .table-sortable tbody tr:nth-of-type(even) {
   background-color: #f3f3f3;
+}
+.table-sortable tbody tr:nth-of-type(odd) {
+  background-color: #ffffff;
 }
 .table-sortable tbody tr:last-of-type {
   border-bottom: 2px solid #24252a;

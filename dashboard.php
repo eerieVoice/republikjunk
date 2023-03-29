@@ -29,13 +29,14 @@ require 'util/admin_conn.php';
                         <p class="status" type="text"></p>
                     </div>
                 </div>
-                <div class="trash-type"><span class="trash-types">Plastic Pet</span></div>
+                <div class="trash-type">
+                    <span class="trash-types">Plastic Pet</span>
+                </div>
             </div>
             <div class="card">
                 <div class="value">
                     <div class="number">
-
-                        <p class="status" type="text"></p>
+                        <p class="status1" type="text"></p>
                     </div>
                 </div>
                 <div class="trash-type">
@@ -46,7 +47,7 @@ require 'util/admin_conn.php';
                 <div class="value">
                     <div class="number">
 
-                        <p class="status" type="text"></p>
+                        <p class="status2" type="text"></p>
                     </div>
                 </div>
                 <div class="trash-type">
@@ -57,7 +58,7 @@ require 'util/admin_conn.php';
                 <div class="value">
                     <div class="number">
 
-                        <p class="status" type="text"></p>
+                        <p class="status3" type="text"></p>
                     </div>
                 </div>
                 <div class="trash-type"><span class="trash-types">Carton</span></div>

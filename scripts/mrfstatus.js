@@ -32,6 +32,24 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebas
         //let confScore = snapshot.val().ConfidenceScore;
         let stat = snapshot.val().Status;
       
-        document.querySelector('.status').innerHTML = '<p>' + stat + '</p>';
-       
+        document.querySelector('.status').innerHTML = '<p>' + stat + '</p>'; 
+    });
+    // status for mrf 2
+    onValue(ref(db, "MRF/MRF2/"), (snapshot) => {
+        //let confScore = snapshot.val().ConfidenceScore;
+        let stat = snapshot.val().Status;
+        document.querySelector('.status1').innerHTML = '<p>' + stat + '</p>'; 
+    });
+    // status for mrf 3
+    onValue(ref(db, "MRF/MRF3/"), (snapshot) => {
+        //let confScore = snapshot.val().ConfidenceScore;
+        let stat = snapshot.val().Status;
+      
+        document.querySelector('.status2').innerHTML = '<p>' + stat + '</p>'; 
+    });
+    // status for mrf 4
+    onValue(ref(db, "MRF/MRF4/"), (snapshot) => {
+        //let confScore = snapshot.val().ConfidenceScore;
+        let stat = snapshot.val().Status;
+        document.querySelector('.status3').innerHTML = '<p>' + stat + '</p>'; 
     });

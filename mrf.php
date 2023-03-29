@@ -35,7 +35,7 @@ require 'util/admin_conn.php';
                 <div class="type">Plastic Solid</div>
                 <img id="mrf1">
                 <div class="statusdiv">
-                    <p class="status" type="text">50%</p>
+                    <p class="status1" type="text"></p>
                 </div>
                 <div class="date-time">
                     <p class="dateDetect" type="text"></p>
@@ -45,17 +45,17 @@ require 'util/admin_conn.php';
                 <div class="type">Cans</div>
                 <img id="mrf2">
                 <div class="statusdiv">
-                    <p class="status" type="text">75%</p>
+                    <p class="status2" type="text"></p>
                 </div>
                 <div class="date-time">
                     <p class="dateDetect" type="text"></p>
                 </div>
             </div>
             <div class="column">
-                <div class="type">Plastic Pet</div>
+                <div class="type">Carton</div>
                 <img id="mrf3">
                 <div class="statusdiv">
-                    <p class="status" type="text">Full</p>
+                    <p class="status3" type="text"></p>
                 </div>
                 <div class="date-time">
                     <p class="dateDetect" type="text"></p>

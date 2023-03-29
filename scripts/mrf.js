@@ -14,8 +14,9 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebas
         const app = initializeApp(firebaseConfig);
         const storage = getStorage();
 
-        // function refreshImage() {
-        getDownloadURL(ref(storage, 'image.jpg'))
+        function refreshImage() {
+
+        getDownloadURL(ref(storage, 'mrf0.jpg'))
             .then((url) => {
                 // This can be downloaded directly:
                 const xhr = new XMLHttpRequest();
@@ -32,7 +33,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebas
             .catch((error) => {
                 // Handle any errors
             });
-        getDownloadURL(ref(storage, 'image1.jpg'))
+        getDownloadURL(ref(storage, 'mrf1.jpg'))
             .then((url) => {
                 // This can be downloaded directly:
                 const xhr = new XMLHttpRequest();
@@ -49,7 +50,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebas
             .catch((error) => {
                 // Handle any errors
             });
-        getDownloadURL(ref(storage, 'image2.jpg'))
+        getDownloadURL(ref(storage, 'mrf2.jpg'))
             .then((url) => {
                 // This can be downloaded directly:
                 const xhr = new XMLHttpRequest();
@@ -66,7 +67,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebas
             .catch((error) => {
                 // Handle any errors
             });
-        getDownloadURL(ref(storage, 'image3.jpg'))
+        getDownloadURL(ref(storage, 'mrf3.jpg'))
             .then((url) => {
                 // This can be downloaded directly:
                 const xhr = new XMLHttpRequest();
@@ -83,3 +84,6 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebas
             .catch((error) => {
                 // Handle any errors
             });
+        }
+        refreshImage();
+        setInterval(refreshImage, 5000);

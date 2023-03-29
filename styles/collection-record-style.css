@@ -6,7 +6,8 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: whitesmoke;
+  background-image: url("../img/recordbackg.svg");
+  background-size: cover;
 }
 .wrapper {
   max-width: 500px;
