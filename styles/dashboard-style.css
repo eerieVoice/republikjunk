@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 .upper-container,
 .lower-container {
@@ -42,7 +42,7 @@
 }
 .lower-container {
   margin-top: -1.5rem;
-  height: 30rem;
+  height: 55vh;
   display: grid;
   grid-template-columns: 2fr 1fr;
   padding: 0.6rem 0;
@@ -107,4 +107,19 @@
   .lower-cards .card {
     padding-bottom: 1rem;
   }
+}
+
+#lineChart {
+  max-height: 50vh;
+  padding: 20px;
+}
+
+#pieChart {
+  max-width: 40vw;
+  max-height: 50vh;
+  padding: 20px;
+}
+
+.lower-container .card {
+  background-color: white;
 }

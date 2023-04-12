@@ -6,6 +6,9 @@ require 'util/admin_conn.php';
     <title>Dashboard</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="styles/dashboard-style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0/dist/chartjs-plugin-datalabels.min.js"></script>
+
 </head>
 
 <body>
@@ -70,10 +73,10 @@ require 'util/admin_conn.php';
     </div>
     <div class="lower-container">
         <div class="card">
-
+        <canvas id="lineChart"></canvas>
         </div>
         <div class="card">
-
+        <canvas id="pieChart"></canvas>
         </div>
     </div>
 
@@ -84,6 +87,9 @@ require 'util/admin_conn.php';
         // var dt = new Date();
         // document.getElementById('date-time').innerHTML = dt;
     </script>
+<script src="scripts/chart.js"></script>
+
+
 
 </body>
 

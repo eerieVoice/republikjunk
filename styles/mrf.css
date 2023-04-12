@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;600;700&display=swap');
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 body {
-  background-image: url("../img/mrfbackg.svg");
+  background-image: url('../img/mrfbackg.svg');
   background-size: cover;
 }
 
@@ -59,10 +59,10 @@ body {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
-.status,
 .status1,
 .status2,
-.status3 {
+.status3,
+.status4 {
   width: 120px;
   height: 120px;
   font-size: 30px;

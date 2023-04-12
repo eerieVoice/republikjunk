@@ -49,8 +49,8 @@ if (isset($_POST["submit"])) {
             </div>
             <div class="form">
                 <div class="inputfield">
-                    <label>Date</label>
-                    <input type="date" class="input" name="date" id="myDate">
+                    <label>Date (dd/mm/yyyy)</label>
+                    <input type="date" class="input" name="date" id="myDate" value="2000-01-01">
                 </div>
                 <div class="inputfield">
                     <label>Plastic Pet</label>
@@ -100,7 +100,6 @@ if (isset($_POST["submit"])) {
                 <input type="submit" name="submit" value="Submit" class> -->
 
     </form>
-
 
 </body>
 
